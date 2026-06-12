@@ -7,7 +7,7 @@ use std::path::{Path, PathBuf};
 use tokei::{Config, LanguageType, Languages};
 
 #[derive(Parser)]
-#[command(name = "treecount", about = "Directory tree with lines of code")]
+#[command(name = "treecount", version, about = "Directory tree with lines of code")]
 struct Cli {
     /// The path(s) to the file or directory to be counted.
     #[arg(default_value = ".")]
